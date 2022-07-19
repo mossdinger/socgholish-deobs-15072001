@@ -8,7 +8,7 @@
     //zd = new RegExp("://([^/]+)/") 
     if (!doc_refer || url.match(zd)[1] == doc_refer.match(zd)[1] || user_agent.indexOf(skip('wWxiwnbdboqwlsi')) == -1 || window.localStorage[skip('t_u_q_wujtamlap')]) 
     // condition 1 checks if the user access the page directly or not -> if not, continue
-    // condition 2 checks if the domain of the current page matches domain of the referrer -> if yes, continue
+    // condition 2 checks if the domain of the current page matches domain of the referrer -> if not, continue
     // condition 3 checks if the user is running from Windows -> if yes, continue
     // condition 4 checks for the localstorage['___utma'] -> if not exists or falsy, continue
     { return; }
