@@ -10,7 +10,7 @@
     // condition 1 checks if the user access the page directly or not -> if not, continue
     // condition 2 checks if the domain of the current page matches domain of the referrer -> if yes, continue
     // condition 3 checks if the user is running from Windows -> if yes, continue
-    // condition 4 checks for the localstorage['___utma'], if exists and not falsy, continue
+    // condition 4 checks for the localstorage['___utma'] -> if not exists or falsy, continue
     { return; }
 
     var script_elem = document.createElement('script'); 
